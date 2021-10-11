@@ -1,0 +1,1155 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/rendering/flex.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/pupl_app/utils/SizeConfig.dart', 'packages/pupl_app/AppTheme.dart', 'packages/draggable_scrollbar/draggable_scrollbar.dart', 'packages/flutter/src/painting/border_radius.dart', 'packages/flutter/src/animation/listener_helpers.dart', 'packages/flutter/src/rendering/layer.dart', 'packages/flutter/src/widgets/scroll_view.dart', 'packages/flutter/src/painting/box_decoration.dart', 'packages/flutter/src/painting/box_border.dart', 'packages/flutter/src/painting/fractional_offset.dart', 'packages/flutter/src/material/elevated_button.dart', 'packages/flutter/src/material/material_state.dart', 'packages/flutter/src/painting/borders.dart', 'packages/flutter/src/painting/rounded_rectangle_border.dart', 'packages/flutter/src/material/page.dart', 'packages/pupl_app/screens/passion_timeline/quiz/TimelineQuizSelect.dart'], (function load__packages__pupl_app__screens__passion_timeline__passage__TimelinePassageScreen_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__rendering__flex$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__pupl_app__utils__SizeConfig$46dart, packages__pupl_app__AppTheme$46dart, packages__draggable_scrollbar__draggable_scrollbar$46dart, packages__flutter__src__painting__border_radius$46dart, packages__flutter__src__animation__listener_helpers$46dart, packages__flutter__src__rendering__layer$46dart, packages__flutter__src__widgets__scroll_view$46dart, packages__flutter__src__painting__box_decoration$46dart, packages__flutter__src__painting__box_border$46dart, packages__flutter__src__painting__fractional_offset$46dart, packages__flutter__src__material__elevated_button$46dart, packages__flutter__src__material__material_state$46dart, packages__flutter__src__painting__borders$46dart, packages__flutter__src__painting__rounded_rectangle_border$46dart, packages__flutter__src__material__page$46dart, packages__pupl_app__screens__passion_timeline__quiz__TimelineQuizSelect$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const _internal = dart_sdk._internal;
+  const async = dart_sdk.async;
+  const ui = dart_sdk.ui;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const scroll_controller = packages__flutter__src__widgets__widget_span$46dart.src__widgets__scroll_controller;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const scroll_physics = packages__flutter__src__widgets__widget_span$46dart.src__widgets__scroll_physics;
+  const navigator = packages__flutter__src__widgets__widget_span$46dart.src__widgets__navigator;
+  const theme = packages__flutter__src__material__icon_button$46dart.src__material__theme;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const button_style = packages__flutter__src__material__icon_button$46dart.src__material__button_style;
+  const theme_data = packages__flutter__src__material__icon_button$46dart.src__material__theme_data;
+  const flex = packages__flutter__src__rendering__flex$46dart.src__rendering__flex;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const SizeConfig = packages__pupl_app__utils__SizeConfig$46dart.utils__SizeConfig;
+  const AppTheme = packages__pupl_app__AppTheme$46dart.AppTheme;
+  const draggable_scrollbar = packages__draggable_scrollbar__draggable_scrollbar$46dart.draggable_scrollbar;
+  const border_radius = packages__flutter__src__painting__border_radius$46dart.src__painting__border_radius;
+  const animation = packages__flutter__src__animation__listener_helpers$46dart.src__animation__animation;
+  const box = packages__flutter__src__rendering__layer$46dart.src__rendering__box;
+  const scroll_view = packages__flutter__src__widgets__scroll_view$46dart.src__widgets__scroll_view;
+  const box_decoration = packages__flutter__src__painting__box_decoration$46dart.src__painting__box_decoration;
+  const box_border = packages__flutter__src__painting__box_border$46dart.src__painting__box_border;
+  const fractional_offset = packages__flutter__src__painting__fractional_offset$46dart.src__painting__fractional_offset;
+  const elevated_button = packages__flutter__src__material__elevated_button$46dart.src__material__elevated_button;
+  const material_state = packages__flutter__src__material__material_state$46dart.src__material__material_state;
+  const borders = packages__flutter__src__painting__borders$46dart.src__painting__borders;
+  const rounded_rectangle_border = packages__flutter__src__painting__rounded_rectangle_border$46dart.src__painting__rounded_rectangle_border;
+  const page = packages__flutter__src__material__page$46dart.src__material__page;
+  const TimelineQuizSelect = packages__pupl_app__screens__passion_timeline__quiz__TimelineQuizSelect$46dart.screens__passion_timeline__quiz__TimelineQuizSelect;
+  var TimelinePassageScreen = Object.create(dart.library);
+  var $length = dartx.length;
+  var $split = dartx.split;
+  dart._checkModuleNullSafetyMode(true);
+  var T = {
+    AnimationOfdouble: () => (T.AnimationOfdouble = dart.constFn(animation.Animation$(core.double)))(),
+    BoxConstraintsN: () => (T.BoxConstraintsN = dart.constFn(dart.nullable(box.BoxConstraints)))(),
+    TextN: () => (T.TextN = dart.constFn(dart.nullable(text.Text)))(),
+    ColorAndAnimationOfdoubleAndAnimationOfdouble__ToClipRRect: () => (T.ColorAndAnimationOfdoubleAndAnimationOfdouble__ToClipRRect = dart.constFn(dart.fnType(basic.ClipRRect, [ui.Color, T.AnimationOfdouble(), T.AnimationOfdouble(), core.double], {labelConstraints: T.BoxConstraintsN(), labelText: T.TextN()}, {})))(),
+    BuildContextAndintToPadding: () => (T.BuildContextAndintToPadding = dart.constFn(dart.fnType(basic.Padding, [framework.BuildContext, core.int])))(),
+    ColorN: () => (T.ColorN = dart.constFn(dart.nullable(ui.Color)))(),
+    SetOfMaterialState: () => (T.SetOfMaterialState = dart.constFn(core.Set$(material_state.MaterialState)))(),
+    SetOfMaterialStateToRoundedRectangleBorder: () => (T.SetOfMaterialStateToRoundedRectangleBorder = dart.constFn(dart.fnType(rounded_rectangle_border.RoundedRectangleBorder, [T.SetOfMaterialState()])))(),
+    EdgeInsetsGeometryN: () => (T.EdgeInsetsGeometryN = dart.constFn(dart.nullable(edge_insets.EdgeInsetsGeometry)))(),
+    ObjectN: () => (T.ObjectN = dart.constFn(dart.nullable(core.Object)))(),
+    VoidTovoid: () => (T.VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))(),
+    BuildContextToTimelineQuizSelect: () => (T.BuildContextToTimelineQuizSelect = dart.constFn(dart.fnType(TimelineQuizSelect.TimelineQuizSelect, [framework.BuildContext])))(),
+    JSArrayOfWidget: () => (T.JSArrayOfWidget = dart.constFn(_interceptors.JSArray$(framework.Widget)))()
+  };
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 15,
+        [_Location_line]: 49,
+        [_Location_file]: null
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 15,
+        [_Location_line]: 50,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2, C[3] || CT.C3], widget_inspector._Location);
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 48,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 13,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 13,
+        [_Location_line]: 47,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 48,
+        [_Location_file]: null
+      });
+    },
+    get C5() {
+      return C[5] = dart.constList([C[6] || CT.C6, C[7] || CT.C7, C[8] || CT.C8], widget_inspector._Location);
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[5] || CT.C5,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 41,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 15,
+        [_Location_line]: 61,
+        [_Location_file]: null
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 15,
+        [_Location_line]: 62,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.constList([C[11] || CT.C11, C[12] || CT.C12], widget_inspector._Location);
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[10] || CT.C10,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 60,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 13,
+        [_Location_line]: 58,
+        [_Location_file]: null
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 60,
+        [_Location_file]: null
+      });
+    },
+    get C14() {
+      return C[14] = dart.constList([C[15] || CT.C15, C[16] || CT.C16], widget_inspector._Location);
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[14] || CT.C14,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 57,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 20,
+        [_Location_line]: 69,
+        [_Location_file]: null
+      });
+    },
+    get C18() {
+      return C[18] = dart.constList([C[19] || CT.C19], widget_inspector._Location);
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[18] || CT.C18,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 69,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 25,
+        [_Location_line]: 85,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 25,
+        [_Location_line]: 86,
+        [_Location_file]: null
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 25,
+        [_Location_line]: 87,
+        [_Location_file]: null
+      });
+    },
+    get C21() {
+      return C[21] = dart.constList([C[22] || CT.C22, C[23] || CT.C23, C[24] || CT.C24], widget_inspector._Location);
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[21] || CT.C21,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 84,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "borderRadius",
+        [_Location_column]: 23,
+        [_Location_line]: 83,
+        [_Location_file]: null
+      });
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 23,
+        [_Location_line]: 84,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.constList([C[27] || CT.C27, C[28] || CT.C28], widget_inspector._Location);
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[26] || CT.C26,
+        [_Location_name]: null,
+        [_Location_column]: 28,
+        [_Location_line]: 82,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 25,
+        [_Location_line]: 104,
+        [_Location_file]: null
+      });
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 25,
+        [_Location_line]: 105,
+        [_Location_file]: null
+      });
+    },
+    get C30() {
+      return C[30] = dart.constList([C[31] || CT.C31, C[32] || CT.C32], widget_inspector._Location);
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[30] || CT.C30,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 103,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 23,
+        [_Location_line]: 102,
+        [_Location_file]: null
+      });
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 23,
+        [_Location_line]: 103,
+        [_Location_file]: null
+      });
+    },
+    get C34() {
+      return C[34] = dart.constList([C[35] || CT.C35, C[36] || CT.C36], widget_inspector._Location);
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[34] || CT.C34,
+        [_Location_name]: null,
+        [_Location_column]: 44,
+        [_Location_line]: 101,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C39() {
+      return C[39] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 21,
+        [_Location_line]: 92,
+        [_Location_file]: null
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "physics",
+        [_Location_column]: 21,
+        [_Location_line]: 98,
+        [_Location_file]: null
+      });
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "controller",
+        [_Location_column]: 21,
+        [_Location_line]: 99,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "itemCount",
+        [_Location_column]: 21,
+        [_Location_line]: 100,
+        [_Location_file]: null
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "itemBuilder",
+        [_Location_column]: 21,
+        [_Location_line]: 101,
+        [_Location_file]: null
+      });
+    },
+    get C38() {
+      return C[38] = dart.constList([C[39] || CT.C39, C[40] || CT.C40, C[41] || CT.C41, C[42] || CT.C42, C[43] || CT.C43], widget_inspector._Location);
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[38] || CT.C38,
+        [_Location_name]: null,
+        [_Location_column]: 35,
+        [_Location_line]: 91,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C46() {
+      return C[46] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "heightScrollThumb",
+        [_Location_column]: 19,
+        [_Location_line]: 77,
+        [_Location_file]: null
+      });
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 19,
+        [_Location_line]: 78,
+        [_Location_file]: null
+      });
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "scrollThumbBuilder",
+        [_Location_column]: 19,
+        [_Location_line]: 79,
+        [_Location_file]: null
+      });
+    },
+    get C49() {
+      return C[49] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 91,
+        [_Location_file]: null
+      });
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "controller",
+        [_Location_column]: 19,
+        [_Location_line]: 113,
+        [_Location_file]: null
+      });
+    },
+    get C45() {
+      return C[45] = dart.constList([C[46] || CT.C46, C[47] || CT.C47, C[48] || CT.C48, C[49] || CT.C49, C[50] || CT.C50], widget_inspector._Location);
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[45] || CT.C45,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 76,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 17,
+        [_Location_line]: 75,
+        [_Location_file]: null
+      });
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 76,
+        [_Location_file]: null
+      });
+    },
+    get C55() {
+      return C[55] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 17,
+        [_Location_line]: 115,
+        [_Location_file]: null
+      });
+    },
+    get C52() {
+      return C[52] = dart.constList([C[53] || CT.C53, C[54] || CT.C54, C[55] || CT.C55], widget_inspector._Location);
+    },
+    get C51() {
+      return C[51] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[52] || CT.C52,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 74,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C58() {
+      return C[58] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 15,
+        [_Location_line]: 72,
+        [_Location_file]: null
+      });
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 74,
+        [_Location_file]: null
+      });
+    },
+    get C57() {
+      return C[57] = dart.constList([C[58] || CT.C58, C[59] || CT.C59], widget_inspector._Location);
+    },
+    get C56() {
+      return C[56] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[57] || CT.C57,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 71,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C62() {
+      return C[62] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 71,
+        [_Location_file]: null
+      });
+    },
+    get C61() {
+      return C[61] = dart.constList([C[62] || CT.C62], widget_inspector._Location);
+    },
+    get C60() {
+      return C[60] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[61] || CT.C61,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 70,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C65() {
+      return C[65] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 25,
+        [_Location_line]: 154,
+        [_Location_file]: null
+      });
+    },
+    get C66() {
+      return C[66] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 25,
+        [_Location_line]: 155,
+        [_Location_file]: null
+      });
+    },
+    get C64() {
+      return C[64] = dart.constList([C[65] || CT.C65, C[66] || CT.C66], widget_inspector._Location);
+    },
+    get C63() {
+      return C[63] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[64] || CT.C64,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 153,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C69() {
+      return C[69] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 23,
+        [_Location_line]: 138,
+        [_Location_file]: null
+      });
+    },
+    get C70() {
+      return C[70] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 23,
+        [_Location_line]: 150,
+        [_Location_file]: null
+      });
+    },
+    get C71() {
+      return C[71] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 23,
+        [_Location_line]: 153,
+        [_Location_file]: null
+      });
+    },
+    get C68() {
+      return C[68] = dart.constList([C[69] || CT.C69, C[70] || CT.C70, C[71] || CT.C71], widget_inspector._Location);
+    },
+    get C67() {
+      return C[67] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[68] || CT.C68,
+        [_Location_name]: null,
+        [_Location_column]: 28,
+        [_Location_line]: 137,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C74() {
+      return C[74] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "flex",
+        [_Location_column]: 21,
+        [_Location_line]: 136,
+        [_Location_file]: null
+      });
+    },
+    get C75() {
+      return C[75] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 21,
+        [_Location_line]: 137,
+        [_Location_file]: null
+      });
+    },
+    get C73() {
+      return C[73] = dart.constList([C[74] || CT.C74, C[75] || CT.C75], widget_inspector._Location);
+    },
+    get C72() {
+      return C[72] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[73] || CT.C73,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 135,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C78() {
+      return C[78] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 21,
+        [_Location_line]: 162,
+        [_Location_file]: null
+      });
+    },
+    get C77() {
+      return C[77] = dart.constList([C[78] || CT.C78], widget_inspector._Location);
+    },
+    get C76() {
+      return C[76] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[77] || CT.C77,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 161,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C80() {
+      return C[80] = dart.constList([], widget_inspector._Location);
+    },
+    get C79() {
+      return C[79] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[80] || CT.C80,
+        [_Location_name]: null,
+        [_Location_column]: 53,
+        [_Location_line]: 186,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C83() {
+      return C[83] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 25,
+        [_Location_line]: 192,
+        [_Location_file]: null
+      });
+    },
+    get C84() {
+      return C[84] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 25,
+        [_Location_line]: 193,
+        [_Location_file]: null
+      });
+    },
+    get C82() {
+      return C[82] = dart.constList([C[83] || CT.C83, C[84] || CT.C84], widget_inspector._Location);
+    },
+    get C81() {
+      return C[81] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[82] || CT.C82,
+        [_Location_name]: null,
+        [_Location_column]: 30,
+        [_Location_line]: 191,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C87() {
+      return C[87] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 23,
+        [_Location_line]: 167,
+        [_Location_file]: null
+      });
+    },
+    get C88() {
+      return C[88] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 23,
+        [_Location_line]: 181,
+        [_Location_file]: null
+      });
+    },
+    get C89() {
+      return C[89] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 23,
+        [_Location_line]: 191,
+        [_Location_file]: null
+      });
+    },
+    get C86() {
+      return C[86] = dart.constList([C[87] || CT.C87, C[88] || CT.C88, C[89] || CT.C89], widget_inspector._Location);
+    },
+    get C85() {
+      return C[85] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[86] || CT.C86,
+        [_Location_name]: null,
+        [_Location_column]: 28,
+        [_Location_line]: 166,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C92() {
+      return C[92] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "flex",
+        [_Location_column]: 21,
+        [_Location_line]: 165,
+        [_Location_file]: null
+      });
+    },
+    get C93() {
+      return C[93] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 21,
+        [_Location_line]: 166,
+        [_Location_file]: null
+      });
+    },
+    get C91() {
+      return C[91] = dart.constList([C[92] || CT.C92, C[93] || CT.C93], widget_inspector._Location);
+    },
+    get C90() {
+      return C[90] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[91] || CT.C91,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 164,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C96() {
+      return C[96] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 17,
+        [_Location_line]: 133,
+        [_Location_file]: null
+      });
+    },
+    get C97() {
+      return C[97] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 17,
+        [_Location_line]: 134,
+        [_Location_file]: null
+      });
+    },
+    get C95() {
+      return C[95] = dart.constList([C[96] || CT.C96, C[97] || CT.C97], widget_inspector._Location);
+    },
+    get C94() {
+      return C[94] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[95] || CT.C95,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 132,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C100() {
+      return C[100] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 15,
+        [_Location_line]: 130,
+        [_Location_file]: null
+      });
+    },
+    get C101() {
+      return C[101] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 15,
+        [_Location_line]: 131,
+        [_Location_file]: null
+      });
+    },
+    get C102() {
+      return C[102] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 132,
+        [_Location_file]: null
+      });
+    },
+    get C99() {
+      return C[99] = dart.constList([C[100] || CT.C100, C[101] || CT.C101, C[102] || CT.C102], widget_inspector._Location);
+    },
+    get C98() {
+      return C[98] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[99] || CT.C99,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 129,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C105() {
+      return C[105] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "alignment",
+        [_Location_column]: 13,
+        [_Location_line]: 128,
+        [_Location_file]: null
+      });
+    },
+    get C106() {
+      return C[106] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 129,
+        [_Location_file]: null
+      });
+    },
+    get C104() {
+      return C[104] = dart.constList([C[105] || CT.C105, C[106] || CT.C106], widget_inspector._Location);
+    },
+    get C103() {
+      return C[103] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[104] || CT.C104,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 127,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C109() {
+      return C[109] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "crossAxisAlignment",
+        [_Location_column]: 9,
+        [_Location_line]: 39,
+        [_Location_file]: null
+      });
+    },
+    get C110() {
+      return C[110] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 9,
+        [_Location_line]: 40,
+        [_Location_file]: null
+      });
+    },
+    get C108() {
+      return C[108] = dart.constList([C[109] || CT.C109, C[110] || CT.C110], widget_inspector._Location);
+    },
+    get C107() {
+      return C[107] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[108] || CT.C108,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 38,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    },
+    get C113() {
+      return C[113] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 7,
+        [_Location_line]: 38,
+        [_Location_file]: null
+      });
+    },
+    get C112() {
+      return C[112] = dart.constList([C[113] || CT.C113], widget_inspector._Location);
+    },
+    get C111() {
+      return C[111] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[112] || CT.C112,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 37,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/screens/passion_timeline/passage/TimelinePassageScreen.dart"
+      });
+    }
+  }, false);
+  var C = Array(114).fill(void 0);
+  var I = ["package:pupl_app/screens/passion_timeline/passage/TimelinePassageScreen.dart"];
+  TimelinePassageScreen.TimelinePassageScreen = class TimelinePassageScreen$ extends framework.StatefulWidget {
+    createState() {
+      return new TimelinePassageScreen._TimelinePassageScreenState.new();
+    }
+  };
+  (TimelinePassageScreen.TimelinePassageScreen.new = function(opts) {
+    let key = opts && 'key' in opts ? opts.key : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    TimelinePassageScreen.TimelinePassageScreen.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = TimelinePassageScreen.TimelinePassageScreen.prototype;
+  dart.addTypeTests(TimelinePassageScreen.TimelinePassageScreen);
+  dart.addTypeCaches(TimelinePassageScreen.TimelinePassageScreen);
+  dart.setMethodSignature(TimelinePassageScreen.TimelinePassageScreen, () => ({
+    __proto__: dart.getMethods(TimelinePassageScreen.TimelinePassageScreen.__proto__),
+    createState: dart.fnType(TimelinePassageScreen._TimelinePassageScreenState, [])
+  }));
+  dart.setLibraryUri(TimelinePassageScreen.TimelinePassageScreen, I[0]);
+  var ___TimelinePassageScreenState__scrollController = dart.privateName(TimelinePassageScreen, "_#_TimelinePassageScreenState#_scrollController");
+  var ___TimelinePassageScreenState_themeData = dart.privateName(TimelinePassageScreen, "_#_TimelinePassageScreenState#themeData");
+  var _scrollController = dart.privateName(TimelinePassageScreen, "_scrollController");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  TimelinePassageScreen._TimelinePassageScreenState = class _TimelinePassageScreenState extends framework.State$(TimelinePassageScreen.TimelinePassageScreen) {
+    get [_scrollController]() {
+      let t0;
+      t0 = this[___TimelinePassageScreenState__scrollController];
+      return t0 == null ? dart.throw(new _internal.LateError.fieldNI("_scrollController")) : t0;
+    }
+    set [_scrollController](t0) {
+      this[___TimelinePassageScreenState__scrollController] = t0;
+    }
+    get themeData() {
+      let t1;
+      t1 = this[___TimelinePassageScreenState_themeData];
+      return t1 == null ? dart.throw(new _internal.LateError.fieldNI("themeData")) : t1;
+    }
+    set themeData(t1) {
+      this[___TimelinePassageScreenState_themeData] = t1;
+    }
+    initState() {
+      this[_scrollController] = new scroll_controller.ScrollController.new();
+      this.setActivity();
+      async.Future.delayed(new core.Duration.new({seconds: 1}), dart.bind(this, 'addScrollListener'));
+      super.initState();
+    }
+    build(context) {
+      this.themeData = theme.Theme.of(context);
+      return new scaffold.Scaffold.new({body: new basic.Column.new({crossAxisAlignment: flex.CrossAxisAlignment.start, children: T.JSArrayOfWidget().of([new container.Container.new({padding: new edge_insets.EdgeInsets.only({top: dart.nullCheck(SizeConfig.MySize.size80), left: dart.nullCheck(SizeConfig.MySize.size32), right: dart.nullCheck(SizeConfig.MySize.size32), bottom: dart.nullCheck(SizeConfig.MySize.size20)}), width: dart.nullCheck(SizeConfig.MySize.safeWidth), child: new text.Text.new(TimelinePassageScreen._TimelinePassageScreenState.headerText, {style: AppTheme.AppTheme.getTextStyle(this.themeData.textTheme.headline5, {fontWeight: 600}), $creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), $creationLocationd_0dea112b090073317d4: C[4] || CT.C4}), new basic.Padding.new({padding: new edge_insets.EdgeInsets.only({left: dart.nullCheck(SizeConfig.MySize.size32), right: dart.nullCheck(SizeConfig.MySize.size24)}), child: new text.Text.new(TimelinePassageScreen._TimelinePassageScreenState.headerSubText, {style: AppTheme.AppTheme.getTextStyle(this.themeData.textTheme.subtitle2, {fontWeight: 500, height: 1.7}), $creationLocationd_0dea112b090073317d4: C[9] || CT.C9}), $creationLocationd_0dea112b090073317d4: C[13] || CT.C13}), new basic.SizedBox.new({height: dart.nullCheck(SizeConfig.MySize.size28), $creationLocationd_0dea112b090073317d4: C[17] || CT.C17}), new basic.Expanded.new({child: new basic.Padding.new({padding: new edge_insets.EdgeInsets.only({left: dart.nullCheck(SizeConfig.MySize.size32), right: dart.nullCheck(SizeConfig.MySize.size24)}), child: new container.Container.new({padding: new edge_insets.EdgeInsets.all(dart.nullCheck(SizeConfig.MySize.size10)), child: new draggable_scrollbar.DraggableScrollbar.new({heightScrollThumb: dart.nullCheck(SizeConfig.MySize.size180), backgroundColor: this.themeData.colorScheme.onBackground, scrollThumbBuilder: dart.fn((backgroundColor, thumbAnimation, labelAnimation, height, opts) => {
+                      let labelConstraints = opts && 'labelConstraints' in opts ? opts.labelConstraints : null;
+                      let labelText = opts && 'labelText' in opts ? opts.labelText : null;
+                      return new basic.ClipRRect.new({borderRadius: new border_radius.BorderRadius.circular(dart.nullCheck(SizeConfig.MySize.size10)), child: new container.Container.new({height: height, width: SizeConfig.MySize.size8, color: backgroundColor, $creationLocationd_0dea112b090073317d4: C[20] || CT.C20}), $creationLocationd_0dea112b090073317d4: C[25] || CT.C25});
+                    }, T.ColorAndAnimationOfdoubleAndAnimationOfdouble__ToClipRRect()), child: new scroll_view.ListView.builder({padding: new edge_insets.EdgeInsets.only({left: dart.nullCheck(SizeConfig.MySize.size16), right: dart.nullCheck(SizeConfig.MySize.size16), top: dart.nullCheck(SizeConfig.MySize.size20), bottom: dart.nullCheck(SizeConfig.MySize.size10)}), physics: new scroll_physics.BouncingScrollPhysics.new(), controller: this[_scrollController], itemCount: 1, itemBuilder: dart.fn((c, i) => new basic.Padding.new({padding: new edge_insets.EdgeInsets.all(dart.nullCheck(SizeConfig.MySize.size8)), child: new text.Text.new(this.dummyText, {style: AppTheme.AppTheme.getTextStyle(this.themeData.textTheme.subtitle2, {fontWeight: 500, height: 1.7}), $creationLocationd_0dea112b090073317d4: C[29] || CT.C29}), $creationLocationd_0dea112b090073317d4: C[33] || CT.C33}), T.BuildContextAndintToPadding()), $creationLocationd_0dea112b090073317d4: C[37] || CT.C37}), controller: this[_scrollController], $creationLocationd_0dea112b090073317d4: C[44] || CT.C44}), decoration: new box_decoration.BoxDecoration.new({border: box_border.Border.all({color: this.themeData.colorScheme.onBackground, width: SizeConfig.MySize.size2}), borderRadius: new border_radius.BorderRadius.circular(dart.nullCheck(SizeConfig.MySize.size10)), color: this.themeData.colorScheme.onSecondary}), $creationLocationd_0dea112b090073317d4: C[51] || CT.C51}), $creationLocationd_0dea112b090073317d4: C[56] || CT.C56}), $creationLocationd_0dea112b090073317d4: C[60] || CT.C60}), new basic.Align.new({alignment: fractional_offset.FractionalOffset.bottomCenter, child: new container.Container.new({padding: new edge_insets.EdgeInsets.all(dart.nullCheck(SizeConfig.MySize.size24)), width: SizeConfig.MySize.safeWidth, child: new basic.Row.new({mainAxisAlignment: flex.MainAxisAlignment.spaceEvenly, children: T.JSArrayOfWidget().of([new basic.Expanded.new({flex: 1, child: new elevated_button.ElevatedButton.new({style: new button_style.ButtonStyle.new({backgroundColor: material_state.MaterialStateProperty.all(T.ColorN(), this.themeData.colorScheme.onSecondary), shape: material_state.MaterialStateProperty.resolveWith(borders.OutlinedBorder, dart.fn(_ => new rounded_rectangle_border.RoundedRectangleBorder.new({borderRadius: new border_radius.BorderRadius.circular(dart.nullCheck(SizeConfig.MySize.size12))}), T.SetOfMaterialStateToRoundedRectangleBorder())), padding: material_state.MaterialStateProperty.all(T.EdgeInsetsGeometryN(), SizeConfig.Spacing.all(dart.nullCheck(SizeConfig.MySize.size14)))}), onPressed: dart.fn(() => {
+                          navigator.Navigator.pop(T.ObjectN(), context);
+                        }, T.VoidTovoid()), child: new text.Text.new("Back", {style: AppTheme.AppTheme.getTextStyle(this.themeData.textTheme.button), $creationLocationd_0dea112b090073317d4: C[63] || CT.C63}), $creationLocationd_0dea112b090073317d4: C[67] || CT.C67}), $creationLocationd_0dea112b090073317d4: C[72] || CT.C72}), new basic.SizedBox.new({width: SizeConfig.MySize.size20, $creationLocationd_0dea112b090073317d4: C[76] || CT.C76}), new basic.Expanded.new({flex: 2, child: new elevated_button.ElevatedButton.new({style: new button_style.ButtonStyle.new({backgroundColor: material_state.MaterialStateProperty.all(T.ColorN(), this.activityFinished ? this.themeData.colorScheme.primary : this.themeData.colorScheme.onBackground), shape: material_state.MaterialStateProperty.resolveWith(borders.OutlinedBorder, dart.fn(_ => new rounded_rectangle_border.RoundedRectangleBorder.new({borderRadius: new border_radius.BorderRadius.circular(dart.nullCheck(SizeConfig.MySize.size12))}), T.SetOfMaterialStateToRoundedRectangleBorder())), padding: material_state.MaterialStateProperty.all(T.EdgeInsetsGeometryN(), SizeConfig.Spacing.all(dart.nullCheck(SizeConfig.MySize.size14)))}), onPressed: dart.fn(() => {
+                          if (this.activityFinished) {
+                            navigator.Navigator.push(dart.dynamic, context, new page.MaterialPageRoute.new({builder: dart.fn(context => new TimelineQuizSelect.TimelineQuizSelect.new({$creationLocationd_0dea112b090073317d4: C[79] || CT.C79}), T.BuildContextToTimelineQuizSelect())}));
+                          }
+                        }, T.VoidTovoid()), child: new text.Text.new("Finish activity", {style: AppTheme.AppTheme.getTextStyle(this.themeData.textTheme.button, {color: this.themeData.colorScheme.onPrimary}), $creationLocationd_0dea112b090073317d4: C[81] || CT.C81}), $creationLocationd_0dea112b090073317d4: C[85] || CT.C85}), $creationLocationd_0dea112b090073317d4: C[90] || CT.C90})]), $creationLocationd_0dea112b090073317d4: C[94] || CT.C94}), $creationLocationd_0dea112b090073317d4: C[98] || CT.C98}), $creationLocationd_0dea112b090073317d4: C[103] || CT.C103})]), $creationLocationd_0dea112b090073317d4: C[107] || CT.C107}), $creationLocationd_0dea112b090073317d4: C[111] || CT.C111});
+    }
+    setActivity() {
+      if (this.dummyText[$split](" ")[$length] <= 100) {
+        this.activityFinished = true;
+      } else {
+        this.activityFinished = false;
+      }
+    }
+    addScrollListener() {
+      if (this[_scrollController].position.pixels === this[_scrollController].position.maxScrollExtent) {
+        this.setState(dart.fn(() => {
+          this.activityFinished = true;
+        }, T.VoidTovoid()));
+      } else {
+        this[_scrollController].addListener(dart.fn(() => {
+          if (this[_scrollController].position.pixels === this[_scrollController].position.maxScrollExtent) {
+            this.setState(dart.fn(() => {
+              this.activityFinished = true;
+            }, T.VoidTovoid()));
+          }
+        }, T.VoidTovoid()));
+      }
+    }
+  };
+  (TimelinePassageScreen._TimelinePassageScreenState.new = function() {
+    this.dummyText = "One night I slept in the library. Made a fortress of study carrels pushed together, like our old bunk beds.\nI imagined bringing IT’S A BOY! here. Showing him picture books of elephant pirates, cats in sneakers.\nWhere did all the people go? I imagine him asking. But he won’t ask. The virus won’t kill everybody. Even the plague didn’t kill everybody.\nMaybe he won’t use the word people. Or he’ll use it to mean everything. When he points at a tortoise, a hawk, a javelina. Maybe what he’ll think is, people. Maybe what he’ll think is, all of us.One night I slept in the library. Made a fortress of study carrels pushed together, like our old bunk beds.\n";
+    this[___TimelinePassageScreenState__scrollController] = null;
+    this.activityFinished = false;
+    this[___TimelinePassageScreenState_themeData] = null;
+    TimelinePassageScreen._TimelinePassageScreenState.__proto__.new.call(this);
+    ;
+  }).prototype = TimelinePassageScreen._TimelinePassageScreenState.prototype;
+  dart.addTypeTests(TimelinePassageScreen._TimelinePassageScreenState);
+  dart.addTypeCaches(TimelinePassageScreen._TimelinePassageScreenState);
+  dart.setMethodSignature(TimelinePassageScreen._TimelinePassageScreenState, () => ({
+    __proto__: dart.getMethods(TimelinePassageScreen._TimelinePassageScreenState.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext]),
+    setActivity: dart.fnType(dart.dynamic, []),
+    addScrollListener: dart.fnType(dart.dynamic, [])
+  }));
+  dart.setGetterSignature(TimelinePassageScreen._TimelinePassageScreenState, () => ({
+    __proto__: dart.getGetters(TimelinePassageScreen._TimelinePassageScreenState.__proto__),
+    [_scrollController]: scroll_controller.ScrollController,
+    themeData: theme_data.ThemeData
+  }));
+  dart.setSetterSignature(TimelinePassageScreen._TimelinePassageScreenState, () => ({
+    __proto__: dart.getSetters(TimelinePassageScreen._TimelinePassageScreenState.__proto__),
+    [_scrollController]: scroll_controller.ScrollController,
+    themeData: theme_data.ThemeData
+  }));
+  dart.setLibraryUri(TimelinePassageScreen._TimelinePassageScreenState, I[0]);
+  dart.setFieldSignature(TimelinePassageScreen._TimelinePassageScreenState, () => ({
+    __proto__: dart.getFields(TimelinePassageScreen._TimelinePassageScreenState.__proto__),
+    dummyText: dart.finalFieldType(core.String),
+    [___TimelinePassageScreenState__scrollController]: dart.fieldType(dart.nullable(scroll_controller.ScrollController)),
+    activityFinished: dart.fieldType(core.bool),
+    [___TimelinePassageScreenState_themeData]: dart.fieldType(dart.nullable(theme_data.ThemeData))
+  }));
+  dart.defineLazy(TimelinePassageScreen._TimelinePassageScreenState, {
+    /*TimelinePassageScreen._TimelinePassageScreenState.headerText*/get headerText() {
+      return "Why is coding important for students and is it recommended for young?";
+    },
+    /*TimelinePassageScreen._TimelinePassageScreenState.headerSubText*/get headerSubText() {
+      return "This activity is to read the passage. Read the passage to understand more about the activity. Scroll to read fully and finish the activity.";
+    }
+  }, false);
+  dart.trackLibraries("packages/pupl_app/screens/passion_timeline/passage/TimelinePassageScreen.dart", {
+    "package:pupl_app/screens/passion_timeline/passage/TimelinePassageScreen.dart": TimelinePassageScreen
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["TimelinePassageScreen.dart"],"names":[],"mappings":"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","file":"../../../../../../../../../packages/pupl_app/screens/passion_timeline/passage/TimelinePassageScreen.dart.lib.js"}');
+  // Exports:
+  return {
+    screens__passion_timeline__passage__TimelinePassageScreen: TimelinePassageScreen
+  };
+}));
+
+//# sourceMappingURL=TimelinePassageScreen.dart.lib.js.map

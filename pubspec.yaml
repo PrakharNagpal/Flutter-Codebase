@@ -1,0 +1,46 @@
+name: pupl_app
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 8.0.0+100
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutx:
+    path: ./flutx
+  cupertino_icons: ^1.0.3
+  provider: ^5.0.0
+  shared_preferences: ^2.0.5
+  material_design_icons_flutter: ^5.0.5955-rc.1
+  google_fonts: ^2.0.0
+  google_maps_flutter: ^2.0.3
+  flutter_feather_icons: ^2.0.0+1
+  url_launcher: ^6.0.3
+  sentry_flutter: ^5.1.0
+  draggable_scrollbar: ^0.1.0
+  youtube_player_flutter: ^8.0.0
+
+dev_dependencies:
+  flutter_driver:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  test: any
+
+flutter:
+  uses-material-design: true
+  assets:
+    #Illustrations
+    - assets/images/illustrations/
+    #Navigation Icons
+    - assets/images/nav_icons/
+  fonts:
+    #Navigation Icons
+    - family: NavIcons
+      fonts:
+        - asset: assets/fonts/NavIcons.ttf

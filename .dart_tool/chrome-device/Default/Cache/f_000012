@@ -1,0 +1,665 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/painting/border_radius.dart', 'packages/flutter/src/painting/rounded_rectangle_border.dart'], (function load__packages__pupl_app__utils__SizeConfig_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__painting__border_radius$46dart, packages__flutter__src__painting__rounded_rectangle_border$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const _internal = dart_sdk._internal;
+  const ui = dart_sdk.ui;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const media_query = packages__flutter__src__widgets__widget_span$46dart.src__widgets__media_query;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const border_radius = packages__flutter__src__painting__border_radius$46dart.src__painting__border_radius;
+  const rounded_rectangle_border = packages__flutter__src__painting__rounded_rectangle_border$46dart.src__painting__rounded_rectangle_border;
+  var SizeConfig = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(true);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 7,
+        [_Location_line]: 199,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2], widget_inspector._Location);
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 198,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/utils/SizeConfig.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 7,
+        [_Location_line]: 204,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.constList([C[5] || CT.C5], widget_inspector._Location);
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 203,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/utils/SizeConfig.dart"
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 21,
+        [_Location_line]: 220,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.constList([C[8] || CT.C8], widget_inspector._Location);
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[7] || CT.C7,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 220,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/utils/SizeConfig.dart"
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 21,
+        [_Location_line]: 224,
+        [_Location_file]: null
+      });
+    },
+    get C10() {
+      return C[10] = dart.constList([C[11] || CT.C11], widget_inspector._Location);
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[10] || CT.C10,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 224,
+        [_Location_file]: "file:///C:/Users/Prakhar/Desktop/FlutterProjects/Pupl-App/lib/utils/SizeConfig.dart"
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: SizeConfig.ShapeTypeFor.prototype,
+        [_name$]: "ShapeTypeFor.container",
+        index: 0
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: SizeConfig.ShapeTypeFor.prototype,
+        [_name$]: "ShapeTypeFor.button",
+        index: 1
+      });
+    },
+    get C14() {
+      return C[14] = dart.constList([C[12] || CT.C12, C[13] || CT.C13], SizeConfig.ShapeTypeFor);
+    }
+  }, false);
+  var C = Array(15).fill(void 0);
+  var I = ["package:pupl_app/utils/SizeConfig.dart"];
+  SizeConfig.MySize = class MySize extends core.Object {
+    static get _mediaQueryData() {
+      let t0;
+      t0 = SizeConfig.MySize['_#_mediaQueryData'];
+      return t0 == null ? dart.throw(new _internal.LateError.fieldNI("_mediaQueryData")) : t0;
+    }
+    static set _mediaQueryData(t0) {
+      SizeConfig.MySize['_#_mediaQueryData'] = t0;
+    }
+    static get screenWidth() {
+      let t1;
+      t1 = SizeConfig.MySize['_#screenWidth'];
+      return t1 == null ? dart.throw(new _internal.LateError.fieldNI("screenWidth")) : t1;
+    }
+    static set screenWidth(t1) {
+      SizeConfig.MySize['_#screenWidth'] = t1;
+    }
+    static get screenHeight() {
+      let t2;
+      t2 = SizeConfig.MySize['_#screenHeight'];
+      return t2 == null ? dart.throw(new _internal.LateError.fieldNI("screenHeight")) : t2;
+    }
+    static set screenHeight(t2) {
+      SizeConfig.MySize['_#screenHeight'] = t2;
+    }
+    static get scaleFactorWidth() {
+      let t3;
+      t3 = SizeConfig.MySize['_#scaleFactorWidth'];
+      return t3 == null ? dart.throw(new _internal.LateError.fieldNI("scaleFactorWidth")) : t3;
+    }
+    static set scaleFactorWidth(t3) {
+      SizeConfig.MySize['_#scaleFactorWidth'] = t3;
+    }
+    static get scaleFactorHeight() {
+      let t4;
+      t4 = SizeConfig.MySize['_#scaleFactorHeight'];
+      return t4 == null ? dart.throw(new _internal.LateError.fieldNI("scaleFactorHeight")) : t4;
+    }
+    static set scaleFactorHeight(t4) {
+      SizeConfig.MySize['_#scaleFactorHeight'] = t4;
+    }
+    static get size2() {
+      let t5;
+      t5 = SizeConfig.MySize['_#size2'];
+      return t5 == null ? dart.throw(new _internal.LateError.fieldNI("size2")) : t5;
+    }
+    static set size2(t5) {
+      SizeConfig.MySize['_#size2'] = t5;
+    }
+    static get size3() {
+      let t6;
+      t6 = SizeConfig.MySize['_#size3'];
+      return t6 == null ? dart.throw(new _internal.LateError.fieldNI("size3")) : t6;
+    }
+    static set size3(t6) {
+      SizeConfig.MySize['_#size3'] = t6;
+    }
+    static get size7() {
+      let t7;
+      t7 = SizeConfig.MySize['_#size7'];
+      return t7 == null ? dart.throw(new _internal.LateError.fieldNI("size7")) : t7;
+    }
+    static set size7(t7) {
+      SizeConfig.MySize['_#size7'] = t7;
+    }
+    static get size34() {
+      let t8;
+      t8 = SizeConfig.MySize['_#size34'];
+      return t8 == null ? dart.throw(new _internal.LateError.fieldNI("size34")) : t8;
+    }
+    static set size34(t8) {
+      SizeConfig.MySize['_#size34'] = t8;
+    }
+    static get size96() {
+      let t9;
+      t9 = SizeConfig.MySize['_#size96'];
+      return t9 == null ? dart.throw(new _internal.LateError.fieldNI("size96")) : t9;
+    }
+    static set size96(t9) {
+      SizeConfig.MySize['_#size96'] = t9;
+    }
+    init(context) {
+      SizeConfig.MySize._mediaQueryData = media_query.MediaQuery.of(context);
+      SizeConfig.MySize.screenWidth = SizeConfig.MySize._mediaQueryData.size.width;
+      SizeConfig.MySize.screenHeight = SizeConfig.MySize._mediaQueryData.size.height;
+      let _safeAreaWidth = SizeConfig.MySize._mediaQueryData.padding.left + SizeConfig.MySize._mediaQueryData.padding.right;
+      let _safeAreaHeight = SizeConfig.MySize._mediaQueryData.padding.top + SizeConfig.MySize._mediaQueryData.padding.bottom;
+      SizeConfig.MySize.safeWidth = SizeConfig.MySize.screenWidth - _safeAreaWidth;
+      SizeConfig.MySize.safeHeight = SizeConfig.MySize.screenHeight - _safeAreaHeight;
+      SizeConfig.MySize.scaleFactorHeight = dart.nullCheck(SizeConfig.MySize.safeHeight) / 820;
+      if (SizeConfig.MySize.scaleFactorHeight < 1) {
+        let diff = (1 - SizeConfig.MySize.scaleFactorHeight) * (1 - SizeConfig.MySize.scaleFactorHeight);
+        SizeConfig.MySize.scaleFactorHeight = SizeConfig.MySize.scaleFactorHeight + diff;
+      }
+      SizeConfig.MySize.scaleFactorWidth = dart.nullCheck(SizeConfig.MySize.safeWidth) / 392;
+      if (SizeConfig.MySize.scaleFactorWidth < 1) {
+        let diff = (1 - SizeConfig.MySize.scaleFactorWidth) * (1 - SizeConfig.MySize.scaleFactorWidth);
+        SizeConfig.MySize.scaleFactorWidth = SizeConfig.MySize.scaleFactorWidth + diff;
+      }
+      SizeConfig.MySize.size0 = 0.0;
+      SizeConfig.MySize.size2 = SizeConfig.MySize.scaleFactorHeight * 2;
+      SizeConfig.MySize.size3 = SizeConfig.MySize.scaleFactorHeight * 3;
+      SizeConfig.MySize.size4 = SizeConfig.MySize.scaleFactorHeight * 4;
+      SizeConfig.MySize.size5 = SizeConfig.MySize.scaleFactorHeight * 5;
+      SizeConfig.MySize.size6 = SizeConfig.MySize.scaleFactorHeight * 6;
+      SizeConfig.MySize.size7 = SizeConfig.MySize.scaleFactorHeight * 7;
+      SizeConfig.MySize.size8 = SizeConfig.MySize.scaleFactorHeight * 8;
+      SizeConfig.MySize.size10 = SizeConfig.MySize.scaleFactorHeight * 10;
+      SizeConfig.MySize.size12 = SizeConfig.MySize.scaleFactorHeight * 12;
+      SizeConfig.MySize.size14 = SizeConfig.MySize.scaleFactorHeight * 14;
+      SizeConfig.MySize.size16 = SizeConfig.MySize.scaleFactorHeight * 16;
+      SizeConfig.MySize.size18 = SizeConfig.MySize.scaleFactorHeight * 18;
+      SizeConfig.MySize.size20 = SizeConfig.MySize.scaleFactorHeight * 20;
+      SizeConfig.MySize.size22 = SizeConfig.MySize.scaleFactorHeight * 22;
+      SizeConfig.MySize.size24 = SizeConfig.MySize.scaleFactorHeight * 24;
+      SizeConfig.MySize.size26 = SizeConfig.MySize.scaleFactorHeight * 26;
+      SizeConfig.MySize.size28 = SizeConfig.MySize.scaleFactorHeight * 28;
+      SizeConfig.MySize.size30 = SizeConfig.MySize.scaleFactorHeight * 30;
+      SizeConfig.MySize.size32 = SizeConfig.MySize.scaleFactorHeight * 32;
+      SizeConfig.MySize.size34 = SizeConfig.MySize.scaleFactorHeight * 34;
+      SizeConfig.MySize.size36 = SizeConfig.MySize.scaleFactorHeight * 36;
+      SizeConfig.MySize.size38 = SizeConfig.MySize.scaleFactorHeight * 38;
+      SizeConfig.MySize.size40 = SizeConfig.MySize.scaleFactorHeight * 40;
+      SizeConfig.MySize.size42 = SizeConfig.MySize.scaleFactorHeight * 42;
+      SizeConfig.MySize.size44 = SizeConfig.MySize.scaleFactorHeight * 44;
+      SizeConfig.MySize.size48 = SizeConfig.MySize.scaleFactorHeight * 48;
+      SizeConfig.MySize.size50 = SizeConfig.MySize.scaleFactorHeight * 50;
+      SizeConfig.MySize.size52 = SizeConfig.MySize.scaleFactorHeight * 52;
+      SizeConfig.MySize.size54 = SizeConfig.MySize.scaleFactorHeight * 54;
+      SizeConfig.MySize.size56 = SizeConfig.MySize.scaleFactorHeight * 56;
+      SizeConfig.MySize.size60 = SizeConfig.MySize.scaleFactorHeight * 60;
+      SizeConfig.MySize.size64 = SizeConfig.MySize.scaleFactorHeight * 64;
+      SizeConfig.MySize.size68 = SizeConfig.MySize.scaleFactorHeight * 68;
+      SizeConfig.MySize.size72 = SizeConfig.MySize.scaleFactorHeight * 72;
+      SizeConfig.MySize.size76 = SizeConfig.MySize.scaleFactorHeight * 76;
+      SizeConfig.MySize.size80 = SizeConfig.MySize.scaleFactorHeight * 80;
+      SizeConfig.MySize.size90 = SizeConfig.MySize.scaleFactorHeight * 90;
+      SizeConfig.MySize.size96 = SizeConfig.MySize.scaleFactorHeight * 96;
+      SizeConfig.MySize.size100 = SizeConfig.MySize.scaleFactorHeight * 100;
+      SizeConfig.MySize.size120 = SizeConfig.MySize.scaleFactorHeight * 120;
+      SizeConfig.MySize.size140 = SizeConfig.MySize.scaleFactorHeight * 140;
+      SizeConfig.MySize.size160 = SizeConfig.MySize.scaleFactorHeight * 160;
+      SizeConfig.MySize.size180 = SizeConfig.MySize.scaleFactorHeight * 180;
+    }
+    static getScaledSizeWidth(size) {
+      return size * SizeConfig.MySize.scaleFactorWidth;
+    }
+    static getScaledSizeHeight(size) {
+      return size * SizeConfig.MySize.scaleFactorHeight;
+    }
+  };
+  (SizeConfig.MySize.new = function() {
+    ;
+  }).prototype = SizeConfig.MySize.prototype;
+  dart.addTypeTests(SizeConfig.MySize);
+  dart.addTypeCaches(SizeConfig.MySize);
+  dart.setMethodSignature(SizeConfig.MySize, () => ({
+    __proto__: dart.getMethods(SizeConfig.MySize.__proto__),
+    init: dart.fnType(dart.void, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(SizeConfig.MySize, I[0]);
+  dart.defineLazy(SizeConfig.MySize, {
+    /*SizeConfig.MySize['_#_mediaQueryData']*/get ['_#_mediaQueryData']() {
+      return null;
+    },
+    set ['_#_mediaQueryData'](_) {},
+    /*SizeConfig.MySize['_#screenWidth']*/get ['_#screenWidth']() {
+      return null;
+    },
+    set ['_#screenWidth'](_) {},
+    /*SizeConfig.MySize['_#screenHeight']*/get ['_#screenHeight']() {
+      return null;
+    },
+    set ['_#screenHeight'](_) {},
+    /*SizeConfig.MySize.safeWidth*/get safeWidth() {
+      return null;
+    },
+    set safeWidth(_) {},
+    /*SizeConfig.MySize.safeHeight*/get safeHeight() {
+      return null;
+    },
+    set safeHeight(_) {},
+    /*SizeConfig.MySize['_#scaleFactorWidth']*/get ['_#scaleFactorWidth']() {
+      return null;
+    },
+    set ['_#scaleFactorWidth'](_) {},
+    /*SizeConfig.MySize['_#scaleFactorHeight']*/get ['_#scaleFactorHeight']() {
+      return null;
+    },
+    set ['_#scaleFactorHeight'](_) {},
+    /*SizeConfig.MySize.size0*/get size0() {
+      return null;
+    },
+    set size0(_) {},
+    /*SizeConfig.MySize['_#size2']*/get ['_#size2']() {
+      return null;
+    },
+    set ['_#size2'](_) {},
+    /*SizeConfig.MySize['_#size3']*/get ['_#size3']() {
+      return null;
+    },
+    set ['_#size3'](_) {},
+    /*SizeConfig.MySize.size4*/get size4() {
+      return null;
+    },
+    set size4(_) {},
+    /*SizeConfig.MySize.size5*/get size5() {
+      return null;
+    },
+    set size5(_) {},
+    /*SizeConfig.MySize.size6*/get size6() {
+      return null;
+    },
+    set size6(_) {},
+    /*SizeConfig.MySize['_#size7']*/get ['_#size7']() {
+      return null;
+    },
+    set ['_#size7'](_) {},
+    /*SizeConfig.MySize.size8*/get size8() {
+      return null;
+    },
+    set size8(_) {},
+    /*SizeConfig.MySize.size10*/get size10() {
+      return null;
+    },
+    set size10(_) {},
+    /*SizeConfig.MySize.size12*/get size12() {
+      return null;
+    },
+    set size12(_) {},
+    /*SizeConfig.MySize.size14*/get size14() {
+      return null;
+    },
+    set size14(_) {},
+    /*SizeConfig.MySize.size16*/get size16() {
+      return null;
+    },
+    set size16(_) {},
+    /*SizeConfig.MySize.size18*/get size18() {
+      return null;
+    },
+    set size18(_) {},
+    /*SizeConfig.MySize.size20*/get size20() {
+      return null;
+    },
+    set size20(_) {},
+    /*SizeConfig.MySize.size22*/get size22() {
+      return null;
+    },
+    set size22(_) {},
+    /*SizeConfig.MySize.size24*/get size24() {
+      return null;
+    },
+    set size24(_) {},
+    /*SizeConfig.MySize.size26*/get size26() {
+      return null;
+    },
+    set size26(_) {},
+    /*SizeConfig.MySize.size28*/get size28() {
+      return null;
+    },
+    set size28(_) {},
+    /*SizeConfig.MySize.size30*/get size30() {
+      return null;
+    },
+    set size30(_) {},
+    /*SizeConfig.MySize.size32*/get size32() {
+      return null;
+    },
+    set size32(_) {},
+    /*SizeConfig.MySize['_#size34']*/get ['_#size34']() {
+      return null;
+    },
+    set ['_#size34'](_) {},
+    /*SizeConfig.MySize.size36*/get size36() {
+      return null;
+    },
+    set size36(_) {},
+    /*SizeConfig.MySize.size38*/get size38() {
+      return null;
+    },
+    set size38(_) {},
+    /*SizeConfig.MySize.size40*/get size40() {
+      return null;
+    },
+    set size40(_) {},
+    /*SizeConfig.MySize.size42*/get size42() {
+      return null;
+    },
+    set size42(_) {},
+    /*SizeConfig.MySize.size44*/get size44() {
+      return null;
+    },
+    set size44(_) {},
+    /*SizeConfig.MySize.size48*/get size48() {
+      return null;
+    },
+    set size48(_) {},
+    /*SizeConfig.MySize.size50*/get size50() {
+      return null;
+    },
+    set size50(_) {},
+    /*SizeConfig.MySize.size52*/get size52() {
+      return null;
+    },
+    set size52(_) {},
+    /*SizeConfig.MySize.size54*/get size54() {
+      return null;
+    },
+    set size54(_) {},
+    /*SizeConfig.MySize.size56*/get size56() {
+      return null;
+    },
+    set size56(_) {},
+    /*SizeConfig.MySize.size60*/get size60() {
+      return null;
+    },
+    set size60(_) {},
+    /*SizeConfig.MySize.size64*/get size64() {
+      return null;
+    },
+    set size64(_) {},
+    /*SizeConfig.MySize.size68*/get size68() {
+      return null;
+    },
+    set size68(_) {},
+    /*SizeConfig.MySize.size72*/get size72() {
+      return null;
+    },
+    set size72(_) {},
+    /*SizeConfig.MySize.size76*/get size76() {
+      return null;
+    },
+    set size76(_) {},
+    /*SizeConfig.MySize.size80*/get size80() {
+      return null;
+    },
+    set size80(_) {},
+    /*SizeConfig.MySize.size90*/get size90() {
+      return null;
+    },
+    set size90(_) {},
+    /*SizeConfig.MySize['_#size96']*/get ['_#size96']() {
+      return null;
+    },
+    set ['_#size96'](_) {},
+    /*SizeConfig.MySize.size100*/get size100() {
+      return null;
+    },
+    set size100(_) {},
+    /*SizeConfig.MySize.size120*/get size120() {
+      return null;
+    },
+    set size120(_) {},
+    /*SizeConfig.MySize.size140*/get size140() {
+      return null;
+    },
+    set size140(_) {},
+    /*SizeConfig.MySize.size160*/get size160() {
+      return null;
+    },
+    set size160(_) {},
+    /*SizeConfig.MySize.size180*/get size180() {
+      return null;
+    },
+    set size180(_) {}
+  }, false);
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  SizeConfig.Spacing = class Spacing extends core.Object {
+    static only(opts) {
+      let top = opts && 'top' in opts ? opts.top : 0;
+      let right = opts && 'right' in opts ? opts.right : 0;
+      let bottom = opts && 'bottom' in opts ? opts.bottom : 0;
+      let left = opts && 'left' in opts ? opts.left : 0;
+      return new edge_insets.EdgeInsets.only({left: left, right: right, top: top, bottom: bottom});
+    }
+    static fromLTRB(left, top, right, bottom) {
+      return SizeConfig.Spacing.only({bottom: bottom, top: top, right: right, left: left});
+    }
+    static all(spacing) {
+      return SizeConfig.Spacing.only({bottom: spacing, top: spacing, right: spacing, left: spacing});
+    }
+    static left(spacing) {
+      return SizeConfig.Spacing.only({left: spacing});
+    }
+    static nLeft(spacing) {
+      return SizeConfig.Spacing.only({top: spacing, bottom: spacing, right: spacing});
+    }
+    static top(spacing) {
+      return SizeConfig.Spacing.only({top: spacing});
+    }
+    static nTop(spacing) {
+      return SizeConfig.Spacing.only({left: spacing, bottom: spacing, right: spacing});
+    }
+    static right(spacing) {
+      return SizeConfig.Spacing.only({right: spacing});
+    }
+    static nRight(spacing) {
+      return SizeConfig.Spacing.only({top: spacing, bottom: spacing, left: spacing});
+    }
+    static bottom(spacing) {
+      return SizeConfig.Spacing.only({bottom: spacing});
+    }
+    static nBottom(spacing) {
+      return SizeConfig.Spacing.only({top: spacing, left: spacing, right: spacing});
+    }
+    static horizontal(spacing) {
+      return SizeConfig.Spacing.only({left: spacing, right: spacing});
+    }
+    static x(spacing) {
+      return SizeConfig.Spacing.only({left: spacing, right: spacing});
+    }
+    static xy(xSpacing, ySpacing) {
+      return SizeConfig.Spacing.only({left: xSpacing, right: xSpacing, top: ySpacing, bottom: ySpacing});
+    }
+    static y(spacing) {
+      return SizeConfig.Spacing.only({top: spacing, bottom: spacing});
+    }
+    static vertical(spacing) {
+      return SizeConfig.Spacing.only({top: spacing, bottom: spacing});
+    }
+    static symmetric(opts) {
+      let vertical = opts && 'vertical' in opts ? opts.vertical : 0;
+      let horizontal = opts && 'horizontal' in opts ? opts.horizontal : 0;
+      return SizeConfig.Spacing.only({top: vertical, right: horizontal, left: horizontal, bottom: vertical});
+    }
+    static height(height) {
+      return new basic.SizedBox.new({height: height, $creationLocationd_0dea112b090073317d4: C[0] || CT.C0});
+    }
+    static width(width) {
+      return new basic.SizedBox.new({width: width, $creationLocationd_0dea112b090073317d4: C[3] || CT.C3});
+    }
+  };
+  (SizeConfig.Spacing.new = function() {
+    ;
+  }).prototype = SizeConfig.Spacing.prototype;
+  dart.addTypeTests(SizeConfig.Spacing);
+  dart.addTypeCaches(SizeConfig.Spacing);
+  dart.setLibraryUri(SizeConfig.Spacing, I[0]);
+  dart.defineLazy(SizeConfig.Spacing, {
+    /*SizeConfig.Spacing.zero*/get zero() {
+      return edge_insets.EdgeInsets.zero;
+    },
+    set zero(_) {}
+  }, false);
+  SizeConfig.Space = class Space extends core.Object {
+    static height(space) {
+      return new basic.SizedBox.new({height: SizeConfig.MySize.getScaledSizeHeight(space), $creationLocationd_0dea112b090073317d4: C[6] || CT.C6});
+    }
+    static width(space) {
+      return new basic.SizedBox.new({width: SizeConfig.MySize.getScaledSizeHeight(space), $creationLocationd_0dea112b090073317d4: C[9] || CT.C9});
+    }
+  };
+  (SizeConfig.Space.new = function() {
+    ;
+  }).prototype = SizeConfig.Space.prototype;
+  dart.addTypeTests(SizeConfig.Space);
+  dart.addTypeCaches(SizeConfig.Space);
+  dart.setLibraryUri(SizeConfig.Space, I[0]);
+  var _name$ = dart.privateName(SizeConfig, "_name");
+  SizeConfig.ShapeTypeFor = class ShapeTypeFor extends core.Object {
+    toString() {
+      return this[_name$];
+    }
+  };
+  (SizeConfig.ShapeTypeFor.new = function(index, _name) {
+    this.index = index;
+    this[_name$] = _name;
+    ;
+  }).prototype = SizeConfig.ShapeTypeFor.prototype;
+  dart.addTypeTests(SizeConfig.ShapeTypeFor);
+  dart.addTypeCaches(SizeConfig.ShapeTypeFor);
+  dart.setLibraryUri(SizeConfig.ShapeTypeFor, I[0]);
+  dart.setFieldSignature(SizeConfig.ShapeTypeFor, () => ({
+    __proto__: dart.getFields(SizeConfig.ShapeTypeFor.__proto__),
+    index: dart.finalFieldType(core.int),
+    [_name$]: dart.finalFieldType(core.String)
+  }));
+  dart.defineExtensionMethods(SizeConfig.ShapeTypeFor, ['toString']);
+  SizeConfig.ShapeTypeFor.container = C[12] || CT.C12;
+  SizeConfig.ShapeTypeFor.button = C[13] || CT.C13;
+  SizeConfig.ShapeTypeFor.values = C[14] || CT.C14;
+  SizeConfig.Shape = class Shape extends core.Object {
+    static circular(radius, opts) {
+      let shapeTypeFor = opts && 'shapeTypeFor' in opts ? opts.shapeTypeFor : C[12] || CT.C12;
+      let borderRadius = new border_radius.BorderRadius.all(new ui.Radius.circular(SizeConfig.MySize.getScaledSizeHeight(radius)));
+      switch (shapeTypeFor) {
+        case C[12] || CT.C12:
+        {
+          return borderRadius;
+        }
+        case C[13] || CT.C13:
+        {
+          return new rounded_rectangle_border.RoundedRectangleBorder.new({borderRadius: borderRadius});
+        }
+      }
+    }
+    static circularTop(radius, opts) {
+      let shapeTypeFor = opts && 'shapeTypeFor' in opts ? opts.shapeTypeFor : C[12] || CT.C12;
+      let borderRadius = new border_radius.BorderRadius.only({topLeft: new ui.Radius.circular(SizeConfig.MySize.getScaledSizeHeight(radius)), topRight: new ui.Radius.circular(SizeConfig.MySize.getScaledSizeHeight(radius))});
+      switch (shapeTypeFor) {
+        case C[12] || CT.C12:
+        {
+          return borderRadius;
+        }
+        case C[13] || CT.C13:
+        {
+          return new rounded_rectangle_border.RoundedRectangleBorder.new({borderRadius: borderRadius});
+        }
+      }
+    }
+  };
+  (SizeConfig.Shape.new = function() {
+    ;
+  }).prototype = SizeConfig.Shape.prototype;
+  dart.addTypeTests(SizeConfig.Shape);
+  dart.addTypeCaches(SizeConfig.Shape);
+  dart.setLibraryUri(SizeConfig.Shape, I[0]);
+  dart.trackLibraries("packages/pupl_app/utils/SizeConfig.dart", {
+    "package:pupl_app/utils/SizeConfig.dart": SizeConfig
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["SizeConfig.dart"],"names":[],"mappings":"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","file":"../../../../../../../packages/pupl_app/utils/SizeConfig.dart.lib.js"}');
+  // Exports:
+  return {
+    utils__SizeConfig: SizeConfig
+  };
+}));
+
+//# sourceMappingURL=SizeConfig.dart.lib.js.map

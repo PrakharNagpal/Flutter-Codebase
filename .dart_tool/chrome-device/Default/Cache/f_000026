@@ -1,0 +1,149 @@
+define(['dart_sdk', 'packages/flutx/themes/custom_theme.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/widgets/icon_theme_data.dart', 'packages/flutter/src/painting/strut_style.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/material/input_border.dart', 'packages/flutter/src/painting/border_radius.dart', 'packages/flutter/src/painting/borders.dart', 'packages/flutter/src/material/floating_action_button_theme.dart', 'packages/flutter/src/material/tab_indicator.dart', 'packages/flutter/src/cupertino/text_theme.dart', 'packages/flutter/src/material/typography.dart', 'packages/google_fonts/src/google_fonts_base.dart'], (function load__packages__flutx__themes__app_theme_dart(dart_sdk, packages__flutx__themes__custom_theme$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__material__colors$46dart, packages__flutter__src__widgets__icon_theme_data$46dart, packages__flutter__src__painting__strut_style$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__material__input_border$46dart, packages__flutter__src__painting__border_radius$46dart, packages__flutter__src__painting__borders$46dart, packages__flutter__src__material__floating_action_button_theme$46dart, packages__flutter__src__material__tab_indicator$46dart, packages__flutter__src__cupertino__text_theme$46dart, packages__flutter__src__material__typography$46dart, packages__google_fonts__src__google_fonts_base$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const custom_theme = packages__flutx__themes__custom_theme$46dart.themes__custom_theme;
+  const theme_data = packages__flutter__src__material__icon_button$46dart.src__material__theme_data;
+  const app_bar_theme = packages__flutter__src__material__icon_button$46dart.src__material__app_bar_theme;
+  const navigation_rail_theme = packages__flutter__src__material__icon_button$46dart.src__material__navigation_rail_theme;
+  const color_scheme = packages__flutter__src__material__icon_button$46dart.src__material__color_scheme;
+  const card_theme = packages__flutter__src__material__icon_button$46dart.src__material__card_theme;
+  const input_decorator = packages__flutter__src__material__icon_button$46dart.src__material__input_decorator;
+  const popup_menu_theme = packages__flutter__src__material__icon_button$46dart.src__material__popup_menu_theme;
+  const bottom_app_bar_theme = packages__flutter__src__material__icon_button$46dart.src__material__bottom_app_bar_theme;
+  const tab_bar_theme = packages__flutter__src__material__icon_button$46dart.src__material__tab_bar_theme;
+  const tabs = packages__flutter__src__material__icon_button$46dart.src__material__tabs;
+  const slider_theme = packages__flutter__src__material__icon_button$46dart.src__material__slider_theme;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const icon_theme_data = packages__flutter__src__widgets__icon_theme_data$46dart.src__widgets__icon_theme_data;
+  const text_style = packages__flutter__src__painting__strut_style$46dart.src__painting__text_style;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const input_border = packages__flutter__src__material__input_border$46dart.src__material__input_border;
+  const border_radius = packages__flutter__src__painting__border_radius$46dart.src__painting__border_radius;
+  const borders = packages__flutter__src__painting__borders$46dart.src__painting__borders;
+  const floating_action_button_theme = packages__flutter__src__material__floating_action_button_theme$46dart.src__material__floating_action_button_theme;
+  const tab_indicator = packages__flutter__src__material__tab_indicator$46dart.src__material__tab_indicator;
+  const theme = packages__flutter__src__cupertino__text_theme$46dart.src__cupertino__theme;
+  const text_theme = packages__flutter__src__material__typography$46dart.src__material__text_theme;
+  const google_fonts = packages__google_fonts__src__google_fonts_base$46dart.google_fonts;
+  var app_theme = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(true);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: app_theme.FxAppThemeType.prototype,
+        [_name$]: "FxAppThemeType.light",
+        index: 0
+      });
+    },
+    get C1() {
+      return C[1] = dart.const({
+        __proto__: app_theme.FxAppThemeType.prototype,
+        [_name$]: "FxAppThemeType.dark",
+        index: 1
+      });
+    },
+    get C2() {
+      return C[2] = dart.constList([C[0] || CT.C0, C[1] || CT.C1], app_theme.FxAppThemeType);
+    }
+  }, false);
+  var C = Array(3).fill(void 0);
+  var I = ["package:flutx/themes/app_theme.dart"];
+  var _name$ = dart.privateName(app_theme, "_name");
+  app_theme.FxAppThemeType = class FxAppThemeType extends core.Object {
+    toString() {
+      return this[_name$];
+    }
+  };
+  (app_theme.FxAppThemeType.new = function(index, _name) {
+    this.index = index;
+    this[_name$] = _name;
+    ;
+  }).prototype = app_theme.FxAppThemeType.prototype;
+  dart.addTypeTests(app_theme.FxAppThemeType);
+  dart.addTypeCaches(app_theme.FxAppThemeType);
+  dart.setLibraryUri(app_theme.FxAppThemeType, I[0]);
+  dart.setFieldSignature(app_theme.FxAppThemeType, () => ({
+    __proto__: dart.getFields(app_theme.FxAppThemeType.__proto__),
+    index: dart.finalFieldType(core.int),
+    [_name$]: dart.finalFieldType(core.String)
+  }));
+  dart.defineExtensionMethods(app_theme.FxAppThemeType, ['toString']);
+  app_theme.FxAppThemeType.light = C[0] || CT.C0;
+  app_theme.FxAppThemeType.dark = C[1] || CT.C1;
+  app_theme.FxAppThemeType.values = C[2] || CT.C2;
+  app_theme.FxAppTheme = class FxAppTheme extends core.Object {
+    static get theme() {
+      return app_theme.FxAppTheme.getThemeFromThemeMode();
+    }
+    static get customTheme() {
+      return custom_theme.FxCustomTheme.getCustomAppTheme();
+    }
+    static getThemeFromThemeMode(opts) {
+      let themeType = opts && 'themeType' in opts ? opts.themeType : null;
+      if (themeType == null) {
+        themeType = app_theme.FxAppTheme.defaultThemeType;
+      }
+      switch (themeType) {
+        case C[0] || CT.C0:
+        {
+          return app_theme.FxAppTheme.lightTheme;
+        }
+        default:
+        {
+          return app_theme.FxAppTheme.darkTheme;
+        }
+      }
+    }
+    static changeLightTheme(themeData) {
+      app_theme.FxAppTheme.lightTheme = themeData;
+    }
+    static changeDarkTheme(themeData) {
+      app_theme.FxAppTheme.darkTheme = themeData;
+    }
+    static changeThemeType(themeType) {
+      app_theme.FxAppTheme.defaultThemeType = dart.nullCheck(themeType);
+    }
+  };
+  (app_theme.FxAppTheme.new = function() {
+    ;
+  }).prototype = app_theme.FxAppTheme.prototype;
+  dart.addTypeTests(app_theme.FxAppTheme);
+  dart.addTypeCaches(app_theme.FxAppTheme);
+  dart.setLibraryUri(app_theme.FxAppTheme, I[0]);
+  dart.defineLazy(app_theme.FxAppTheme, {
+    /*app_theme.FxAppTheme.defaultThemeType*/get defaultThemeType() {
+      return app_theme.FxAppThemeType.light;
+    },
+    set defaultThemeType(_) {},
+    /*app_theme.FxAppTheme.lightTheme*/get lightTheme() {
+      return theme_data.ThemeData.light().copyWith({brightness: ui.Brightness.light, primaryColor: new ui.Color.new(4285951476), canvasColor: colors.Colors.transparent, backgroundColor: new ui.Color.new(4293784053), scaffoldBackgroundColor: new ui.Color.new(4293784053), appBarTheme: new app_bar_theme.AppBarTheme.new({textTheme: app_theme.FxAppTheme.lightAppBarTextTheme, actionsIconTheme: new icon_theme_data.IconThemeData.new({color: new ui.Color.new(4290954956)}), color: new ui.Color.new(4294967295), iconTheme: new icon_theme_data.IconThemeData.new({color: new ui.Color.new(4290954956), size: 24.0})}), navigationRailTheme: new navigation_rail_theme.NavigationRailThemeData.new({selectedIconTheme: new icon_theme_data.IconThemeData.new({color: new ui.Color.new(4285951476), opacity: 1.0, size: 24.0}), unselectedIconTheme: new icon_theme_data.IconThemeData.new({color: new ui.Color.new(4290954956), opacity: 1.0, size: 24.0}), backgroundColor: new ui.Color.new(4293784053), elevation: 3.0, selectedLabelTextStyle: new text_style.TextStyle.new({color: new ui.Color.new(4285951476)}), unselectedLabelTextStyle: new text_style.TextStyle.new({color: new ui.Color.new(4290954956)})}), colorScheme: new color_scheme.ColorScheme.light({primary: new ui.Color.new(4285951476), onPrimary: colors.Colors.white, primaryVariant: new ui.Color.new(4283796216), secondary: new ui.Color.new(4290954956), secondaryVariant: new ui.Color.new(4281907076), onSecondary: colors.Colors.white, surface: new ui.Color.new(4293060593), background: new ui.Color.new(4293784053), onBackground: new ui.Color.new(4290954956)}), cardTheme: new card_theme.CardTheme.new({color: colors.Colors.white, shadowColor: colors.Colors.black.withOpacity(0.4), elevation: 1.0, margin: new edge_insets.EdgeInsets.all(0.0)}), inputDecorationTheme: new input_decorator.InputDecorationTheme.new({hintStyle: new text_style.TextStyle.new({fontSize: 15.0, color: new ui.Color.new(2864891596)}), focusedBorder: new input_border.OutlineInputBorder.new({borderRadius: new border_radius.BorderRadius.all(new ui.Radius.circular(4.0)), borderSide: new borders.BorderSide.new({width: 1.0, color: new ui.Color.new(4285951476)})}), enabledBorder: new input_border.OutlineInputBorder.new({borderRadius: new border_radius.BorderRadius.all(new ui.Radius.circular(4.0)), borderSide: new borders.BorderSide.new({width: 1.0, color: colors.Colors.black54})}), border: new input_border.OutlineInputBorder.new({borderRadius: new border_radius.BorderRadius.all(new ui.Radius.circular(4.0)), borderSide: new borders.BorderSide.new({width: 1.0, color: colors.Colors.black54})})}), splashColor: colors.Colors.white.withAlpha(100), iconTheme: new icon_theme_data.IconThemeData.new({color: colors.Colors.white}), textTheme: app_theme.FxAppTheme.lightTextTheme, indicatorColor: colors.Colors.white, disabledColor: new ui.Color.new(4293322239), highlightColor: colors.Colors.white, floatingActionButtonTheme: new floating_action_button_theme.FloatingActionButtonThemeData.new({backgroundColor: new ui.Color.new(4285951476), splashColor: colors.Colors.white.withAlpha(100), highlightElevation: 8.0, elevation: 4.0, focusColor: new ui.Color.new(4285951476), hoverColor: new ui.Color.new(4285951476), foregroundColor: colors.Colors.white}), dividerColor: new ui.Color.new(4291940817), errorColor: new ui.Color.new(4291776636), cardColor: colors.Colors.white, accentColor: new ui.Color.new(4285951476), popupMenuTheme: new popup_menu_theme.PopupMenuThemeData.new({color: new ui.Color.new(4294967295), textStyle: dart.nullCheck(app_theme.FxAppTheme.lightTextTheme.bodyText2).merge(new text_style.TextStyle.new({color: new ui.Color.new(4290954956)}))}), bottomAppBarTheme: new bottom_app_bar_theme.BottomAppBarTheme.new({color: new ui.Color.new(4294967295), elevation: 2.0}), tabBarTheme: new tab_bar_theme.TabBarTheme.new({unselectedLabelColor: new ui.Color.new(4290954956), labelColor: new ui.Color.new(4285951476), indicatorSize: tabs.TabBarIndicatorSize.label, indicator: new tab_indicator.UnderlineTabIndicator.new({borderSide: new borders.BorderSide.new({color: new ui.Color.new(4285951476), width: 2.0})})}), sliderTheme: new slider_theme.SliderThemeData.new({activeTrackColor: new ui.Color.new(4285951476), inactiveTrackColor: new ui.Color.new(4285951476).withAlpha(140), trackShape: new slider_theme.RoundedRectSliderTrackShape.new(), trackHeight: 4.0, thumbColor: new ui.Color.new(4285951476), thumbShape: new slider_theme.RoundSliderThumbShape.new({enabledThumbRadius: 10.0}), overlayShape: new slider_theme.RoundSliderOverlayShape.new({overlayRadius: 24.0}), tickMarkShape: new slider_theme.RoundSliderTickMarkShape.new(), inactiveTickMarkColor: new ui.Color.new(4294105059), valueIndicatorShape: new slider_theme.PaddleSliderValueIndicatorShape.new(), valueIndicatorTextStyle: new text_style.TextStyle.new({color: colors.Colors.white})})});
+    },
+    set lightTheme(_) {},
+    /*app_theme.FxAppTheme.darkTheme*/get darkTheme() {
+      return theme_data.ThemeData.dark().copyWith({brightness: ui.Brightness.dark, canvasColor: colors.Colors.transparent, primaryColor: new ui.Color.new(4282213375), scaffoldBackgroundColor: new ui.Color.new(4279966491), backgroundColor: new ui.Color.new(4280624421), appBarTheme: new app_bar_theme.AppBarTheme.new({actionsIconTheme: new icon_theme_data.IconThemeData.new({color: new ui.Color.new(4294967295)}), color: new ui.Color.new(4281218107), iconTheme: new icon_theme_data.IconThemeData.new({color: new ui.Color.new(4294967295), size: 24.0})}), colorScheme: new color_scheme.ColorScheme.dark({primary: new ui.Color.new(4282213375), primaryVariant: new ui.Color.new(4282213375), secondary: new ui.Color.new(4278242423), secondaryVariant: new ui.Color.new(4278242423), background: new ui.Color.new(4280624421), onPrimary: colors.Colors.white, onBackground: colors.Colors.white, onSecondary: colors.Colors.white, surface: new ui.Color.new(4283981411)}), cardTheme: new card_theme.CardTheme.new({color: new ui.Color.new(4281811018), shadowColor: new ui.Color.new(4278190080), elevation: 1.0, margin: new edge_insets.EdgeInsets.all(0.0)}), iconTheme: new icon_theme_data.IconThemeData.new({color: colors.Colors.white}), indicatorColor: colors.Colors.white, disabledColor: new ui.Color.new(4288914339), highlightColor: colors.Colors.white, inputDecorationTheme: new input_decorator.InputDecorationTheme.new({fillColor: new ui.Color.new(4282270794), focusedBorder: new input_border.OutlineInputBorder.new({borderRadius: new border_radius.BorderRadius.all(new ui.Radius.circular(4.0)), borderSide: new borders.BorderSide.new({width: 1.0, color: new ui.Color.new(4282213375)})}), enabledBorder: new input_border.OutlineInputBorder.new({borderRadius: new border_radius.BorderRadius.all(new ui.Radius.circular(4.0)), borderSide: new borders.BorderSide.new({width: 1.0, color: colors.Colors.white70})}), border: new input_border.OutlineInputBorder.new({borderRadius: new border_radius.BorderRadius.all(new ui.Radius.circular(4.0)), borderSide: new borders.BorderSide.new({width: 1.0, color: colors.Colors.white70})})}), dividerColor: new ui.Color.new(4281742902), errorColor: colors.Colors.orange, cardColor: new ui.Color.new(4280822315), splashColor: colors.Colors.white.withAlpha(100), floatingActionButtonTheme: new floating_action_button_theme.FloatingActionButtonThemeData.new({backgroundColor: new ui.Color.new(4282213375), splashColor: colors.Colors.white.withAlpha(100), highlightElevation: 8.0, elevation: 4.0, focusColor: new ui.Color.new(4282213375), hoverColor: new ui.Color.new(4282213375), foregroundColor: colors.Colors.white}), accentColor: new ui.Color.new(4282213375), popupMenuTheme: new popup_menu_theme.PopupMenuThemeData.new({color: new ui.Color.new(4281811018)}), bottomAppBarTheme: new bottom_app_bar_theme.BottomAppBarTheme.new({color: new ui.Color.new(4282797138), elevation: 2.0}), tabBarTheme: new tab_bar_theme.TabBarTheme.new({unselectedLabelColor: new ui.Color.new(4282994775), labelColor: new ui.Color.new(4282213375), indicatorSize: tabs.TabBarIndicatorSize.label, indicator: new tab_indicator.UnderlineTabIndicator.new({borderSide: new borders.BorderSide.new({color: new ui.Color.new(4282213375), width: 2.0})})}), sliderTheme: new slider_theme.SliderThemeData.new({activeTrackColor: new ui.Color.new(4282213375), inactiveTrackColor: new ui.Color.new(4282213375).withAlpha(100), trackShape: new slider_theme.RoundedRectSliderTrackShape.new(), trackHeight: 4.0, thumbColor: new ui.Color.new(4282213375), thumbShape: new slider_theme.RoundSliderThumbShape.new({enabledThumbRadius: 10.0}), overlayShape: new slider_theme.RoundSliderOverlayShape.new({overlayRadius: 24.0}), tickMarkShape: new slider_theme.RoundSliderTickMarkShape.new(), inactiveTickMarkColor: colors.Colors.red._get(100), valueIndicatorShape: new slider_theme.PaddleSliderValueIndicatorShape.new(), valueIndicatorTextStyle: new text_style.TextStyle.new({color: colors.Colors.white})}), cupertinoOverrideTheme: new theme.CupertinoThemeData.new()});
+    },
+    set darkTheme(_) {},
+    /*app_theme.FxAppTheme.lightAppBarTextTheme*/get lightAppBarTextTheme() {
+      return new text_theme.TextTheme.new({headline1: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 102.0, color: new ui.Color.new(4290954956)})}), headline2: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 64.0, color: new ui.Color.new(4290954956)})}), headline3: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 51.0, color: new ui.Color.new(4290954956)})}), headline4: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 36.0, color: new ui.Color.new(4290954956)})}), headline5: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 25.0, color: new ui.Color.new(4290954956)})}), headline6: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 18.0, color: new ui.Color.new(4290954956)})}), subtitle1: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 17.0, color: new ui.Color.new(4290954956)})}), subtitle2: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 15.0, color: new ui.Color.new(4290954956)})}), bodyText1: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 16.0, color: new ui.Color.new(4290954956)})}), bodyText2: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 14.0, color: new ui.Color.new(4290954956)})}), button: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 15.0, color: new ui.Color.new(4290954956)})}), caption: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 13.0, color: new ui.Color.new(4290954956)})}), overline: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 11.0, color: new ui.Color.new(4290954956)})})});
+    },
+    /*app_theme.FxAppTheme.lightTextTheme*/get lightTextTheme() {
+      return new text_theme.TextTheme.new({headline1: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 102.0, color: new ui.Color.new(4278192158)})}), headline2: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 64.0, color: new ui.Color.new(4278192158)})}), headline3: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 51.0, color: new ui.Color.new(4278192158)})}), headline4: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 36.0, color: new ui.Color.new(4278192158)})}), headline5: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 25.0, color: new ui.Color.new(4278192158)})}), headline6: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 18.0, color: new ui.Color.new(4278850350)})}), subtitle1: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 17.0, color: new ui.Color.new(4284902264)})}), subtitle2: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 15.0, color: new ui.Color.new(4284902264)})}), bodyText1: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 16.0, color: new ui.Color.new(4278192158)})}), bodyText2: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 14.0, color: new ui.Color.new(4278192158)})}), button: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 15.0, color: new ui.Color.new(4278192158)})}), caption: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 13.0, color: new ui.Color.new(4284902264)})}), overline: google_fonts.GoogleFonts.ibmPlexSans({textStyle: new text_style.TextStyle.new({fontSize: 11.0, color: new ui.Color.new(4278192158)})})});
+    }
+  }, false);
+  dart.trackLibraries("packages/flutx/themes/app_theme.dart", {
+    "package:flutx/themes/app_theme.dart": app_theme
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["app_theme.dart"],"names":[],"mappings":"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","file":"../../../../../../../../packages/flutx/themes/app_theme.dart.lib.js"}');
+  // Exports:
+  return {
+    themes__app_theme: app_theme
+  };
+}));
+
+//# sourceMappingURL=app_theme.dart.lib.js.map
